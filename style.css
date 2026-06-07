@@ -1,0 +1,135 @@
+/* 全域設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+/* =========================
+   上方固定導覽列
+========================= */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100px;
+
+    background-color: red;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 30px;
+
+    z-index: 999;
+}
+
+/* LOGO */
+.logo {
+    width: 110px;
+    height: 70px;
+
+    background-color: #b7e313;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-decoration: none;
+    color: black;
+
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 中間按鈕區 */
+.menu {
+    display: flex;
+    gap: 20px;
+
+    margin-left: 30px;
+    margin-right: auto;
+}
+
+/* 四個藍色按鈕 */
+.menu-btn {
+    width: 90px;
+    height: 40px;
+
+    background-color: #a8d7e7;
+
+    display: block;
+}
+
+/* 右側 */
+.right-buttons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+/* 紫色登入 */
+.login-btn {
+    width: 75px;
+    height: 75px;
+
+    background-color: #9b59b6;
+
+    display: block;
+}
+
+/* 黑色會員 */
+.member-btn {
+    width: 75px;
+    height: 75px;
+
+    background-color: orange;
+
+    border: none;
+    cursor: pointer;
+}
+
+/* =========================
+   主內容
+========================= */
+
+.content {
+    margin-top: 100px;
+}
+
+/* 黃色區塊 */
+.yellow-section {
+
+    background-color: yellow;
+
+    /*
+      這裡就是未來可調整高度的地方
+      你可以改成：
+      min-height: 3000px;
+      或放內容自動撐開
+    */
+
+    min-height: 1200px;
+}
+
+/* 橘色區塊 */
+.footer {
+    height: 180px;
+
+    background-color: orange;
+}
+
+/* page1 空白區 */
+.blank-page {
+    margin-top: 100px;
+    min-height: 100vh;
+    background-color: white;
+}
