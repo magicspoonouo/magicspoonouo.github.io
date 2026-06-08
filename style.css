@@ -10,9 +10,11 @@ body {
 }
 
 /* =========================
-   上方固定導覽列
+    上方固定導覽列
 ========================= */
 
+/*-----------------------------------*/
+/* 上方固定導覽列 */
 .navbar {
     position: fixed;
     top: 0;
@@ -21,7 +23,7 @@ body {
     width: 100%;
     height: 100px;
 
-    background-color: red;
+    background-color: rgb(255, 255, 255);
 
     display: flex;
     align-items: center;
@@ -31,25 +33,29 @@ body {
 
     z-index: 999;
 }
+/*-----------------------------------*/
 
+/*-----------------------------------*/
 /* LOGO */
 .logo {
     width: 110px;
     height: 70px;
-
-    background-color: #b7e313;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     text-decoration: none;
-    color: black;
-
-    font-size: 24px;
-    font-weight: bold;
 }
+/* 控制LOGO圖片大小 */
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+/*-----------------------------------*/
 
+/*-----------------------------------*/
 /* 中間按鈕區 */
 .menu {
     display: flex;
@@ -58,78 +64,127 @@ body {
     margin-left: 30px;
     margin-right: auto;
 }
+/*-----------------------------------*/
 
-/* 四個藍色按鈕 */
+/*-----------------------------------*/
+/* 四個深綠色按鈕 */
 .menu-btn {
     width: 90px;
     height: 40px;
 
-    background-color: #a8d7e7;
+    background-color: #295b2e;
 
     display: block;
 }
+/*-----------------------------------*/
 
-/* 右側 */
-.right-buttons {
+/*-----------------------------------*/
+/* 會員 */
+.login-btn {
+    width: 80px;
+    height: 40px;
+
     display: flex;
     align-items: center;
-    gap: 40px;
+    justify-content: center;
+
+    text-decoration: none;
 }
-
-/* 紫色登入 */
-.login-btn {
-    width: 75px;
-    height: 75px;
-
-    background-color: #9b59b6;
-
-    display: block;
+/* 控制會員圖片大小 */
+.login-btn img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
+/*-----------------------------------*/
 
-/* 黑色會員 */
-.member-btn {
-    width: 75px;
-    height: 75px;
+/*-----------------------------------*/
+/* 右下角浮動方塊 */
+.floating-buttons {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
 
-    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
-    border: none;
-    cursor: pointer;
+    z-index: 999;
 }
+.float-btn {
+    width: 60px;
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #333;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 10px;
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+.float-btn:hover {
+    background: #555;
+    transform: scale(1.05);
+}
+/*-----------------------------------*/
 
 /* =========================
-   主內容
+    主內容
 ========================= */
 
 .content {
     margin-top: 100px;
 }
 
-/* 黃色區塊 */
-.yellow-section {
-
-    background-color: yellow;
-
-    /*
-      這裡就是未來可調整高度的地方
-      你可以改成：
-      min-height: 3000px;
-      或放內容自動撐開
-    */
-
+/*-----------------------------------*/
+/* 中段米色區塊 */
+.beige-section {
+    background-color: rgb(215, 200, 190);
     min-height: 1200px;
-}
 
-/* 橘色區塊 */
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 30px;
+    padding-top: 50px;
+}
+/*-----------------------------------*/
+
+/*-----------------------------------*/
+/* 商品 */
+.product-image {
+    width: 80%;
+    max-width: 1000px;
+    height: auto;
+}
+/*-----------------------------------*/
+
+/*-----------------------------------*/
+/* 咖啡色區塊 */
 .footer {
-    height: 180px;
+    height: 150px;
+    background-color: rgb(45, 40, 30);
 
-    background-color: orange;
+    color: white;
+    text-align: center;
+
+    padding: 30px 20px;
 }
+/*-----------------------------------*/
 
-/* page1 空白區 */
+/*-----------------------------------*/
+/* page暫定的空白區 */
 .blank-page {
     margin-top: 100px;
     min-height: 100vh;
     background-color: white;
 }
+/*-----------------------------------*/
